@@ -12,10 +12,6 @@ object T {
   def apply(_value: Int = 0, _left: TreeNode = null, _right: TreeNode = null) = {
     new TreeNode(_value, _left, _right)
   }
-
-  def nTrue(node: TreeNode) = {
-    if (node == null) true
-  }
 }
 
 def isUnivalTree(root: TreeNode): Boolean = {
@@ -30,7 +26,6 @@ def isUnivalTree(root: TreeNode): Boolean = {
   }
   go(root)
 }
-
 
 val in = T(1, T(1, T(1), T(1)), T(1, null, T(1)))
 val in2 = T(2, T(2, T(5), T(2)), T(2))
