@@ -1,3 +1,6 @@
+/*
+ * 1022 Sum of Root to Leaf Binary Numbers
+ */
 class TreeNode(_value: Int = 0, _left: TreeNode = null, _right: TreeNode = null) {
   var value: Int = _value
   var left: TreeNode = _left
@@ -45,9 +48,6 @@ def sumRootToLeaf(root: TreeNode): Int = {
   go(List.empty[Int], root)
   sum
 }
-
-
-
 
 val in = T(1, T(0, T(0), T(1)), T(1, T(0), T(1)))
 
