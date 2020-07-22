@@ -14,7 +14,6 @@ object T {
   }
 }
 
-
 def getMinimumDifference(root: TreeNode): Int = {
   var xs = List.empty[Int]
 
