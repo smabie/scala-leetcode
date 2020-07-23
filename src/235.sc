@@ -25,19 +25,10 @@ def lowestCommonAncestor(root: TreeNode, p: TreeNode, q: TreeNode): TreeNode = {
           Some(node)
         else
           None
-      (for {
-        ll <- l
-        xx <- x
-      } yield node).orElse {
-        for {
-          rr <- r
-          xx <- x
-        } yield node
+      (for { ll <- l; xx <- x } yield node).orElse {
+        for { rr <- r; xx <- x } yield node
       }.orElse {
-        for {
-          ll <- l
-          rr <- r
-        } yield node
+        for { ll <- l; rr <- r } yield node
       }.orElse(l).orElse(r).orElse(x)
     }
   }
