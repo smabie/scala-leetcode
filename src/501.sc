@@ -15,7 +15,7 @@ object T {
 }
 
 
-def findMode(root: TreeNode): Array[Int] = {
+ def findMode(root: TreeNode): Array[Int] = {
   val ht = collection.mutable.HashMap.empty[Int, Int]
   def go(node: TreeNode): Unit = {
     if (node == null)
