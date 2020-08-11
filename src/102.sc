@@ -15,7 +15,7 @@ object T {
 }
 
 def levelOrder(root: TreeNode): List[List[Int]] = {
-  var ht = collection.mutable.SortedMap.empty[Int, List[Int]]
+  val ht = collection.mutable.SortedMap.empty[Int, List[Int]]
   def go(node: TreeNode, level: Int): Unit = {
     if (node == null)
       ()
